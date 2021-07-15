@@ -73,5 +73,5 @@ if (answerFive === 'yes' || answerFive === 'y') {
 } else if (answerFive === 'no' || answerFive === 'n') {
   alert('I have two dogs ' + username + ' but thank you for playing.');
 } else {
-  alert('Please answer \'yes\' or \'no\'.');
+  alert('Please answer \'yes\' or \'no\'.'); 
 }
