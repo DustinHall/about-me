@@ -13,5 +13,6 @@ h1 {
   color:orange;
   font-size: 1.25rem;
   border-style: outset;
-  border-width: thick; 
+  border-width: thick;
+  text-align: center; 
 }
