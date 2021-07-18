@@ -80,7 +80,7 @@ if (answerFive === 'yes' || answerFive === 'y') {
 } else if (answerFive === 'no' || answerFive === 'n') {
   alert('I have two dogs ' + username + ' but thank you for playing.');
 } else {
-  alert('Please answer \'yes\' or \'no\'.'); 
+  alert('Please answer \'yes\' or \'no\'.');
 }
 
 // question six
@@ -101,14 +101,14 @@ for (let i = 0; i < attempts; i++) {
     alert(`Sorry but you are too high, you have ${attempts - i - 1} attempts remaining.`);
   }
   if (i === 3){
-    alert(`Sorry but the answer is 27.`);
-  } 
+    alert('Sorry but the answer is 27.');
+  }
 }
 
 // question 7
 
 
-let myFavSports = [ 'soccer' , 'football' , 'rugby' , 'baseball' ];
+let myFavSports = ['soccer', 'football', 'rugby', 'baseball'];
 let tries = 6;
 
 for (let i = 0; i < tries; i++) {
@@ -116,14 +116,14 @@ for (let i = 0; i < tries; i++) {
   let userResponse = prompt('Name one of my favorite sports.');
   if (userResponse === myFavSports[i]) {
     alert('Nice! You must really know me!');
-    numCorr++
+    numCorr++;
     break;
   } else if (userResponse !== myFavSports[i]) {
     alert(`Sorry but that is incorrect, you have ${tries - i - 1} tries remaining. Keep Thinking!!`);
   }
   if (i === 5){
     alert(`Sorry but the answer is ${myFavSports}.`);
-  } 
+  }
 }
 
 alert(`Congratulations! You got ${numCorr} correct!!`);
