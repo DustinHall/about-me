@@ -108,7 +108,7 @@ for (let i = 0; i < attempts; i++) {
 // question 7
 
 
-let myFavSports = ['soccer ', 'football ', 'rugby ', 'baseball '];
+let myFavSports = ['soccer', 'football', 'rugby', 'baseball'];
 let tries = 6;
 
 for (let i = 0; i < tries; i++) {
