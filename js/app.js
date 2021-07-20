@@ -109,17 +109,21 @@ for (let i = 0; i < attempts; i++) {
 
 
 let myFavSports = ['soccer', 'football', 'rugby', 'baseball'];
+console.log(myFavSports);
 let tries = 6;
 
 for (let i = 0; i < tries; i++) {
   console.log('i is '+ i);
-  let userResponse = prompt('Name one of my favorite sports.');
-  if (userResponse === myFavSports[i]) {
-    alert('Nice! You must really know me!');
-    numCorr++;
-    break;
-  } else if (userResponse !== myFavSports[i]) {
-    alert(`Sorry but that is incorrect, you have ${tries - i - 1} tries remaining. Keep Thinking!!`);
+  for (let j = 0; j < myFavSports.length; j++) {
+    let userResponse = prompt('Name one of my favorite sports.');
+    console.log(userResponse);
+    if (userResponse === myFavSports[i]) {
+      alert('Nice! You must really know me!');
+      numCorr++;
+      break;
+    } else if (userResponse !== myFavSports[i]){
+      alert(`Sorry but that is incorrect, you have ${tries - i - 1} tries remaining. Keep Thinking!!`);
+    }
   }
   if (i === 5){
     alert(`Sorry but the answer is ${myFavSports}.`);
