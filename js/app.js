@@ -86,19 +86,23 @@ function work(){
 work();
 
 // question five
-let answerFive = prompt('Do I have animals? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 5: ' + answerFive);
 
 // check if the answer is correct.
-if (answerFive === 'yes' || answerFive === 'y') {
-  alert('For sure ' + username + '! Two dogs. Thank you for playing!');
-  numCorr++;
-} else if (answerFive === 'no' || answerFive === 'n') {
-  alert('I have two dogs ' + username + ' but thank you for playing.');
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function animals(){
+  let answerFive = prompt('Do I have animals? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerFive === 'yes' || answerFive === 'y') {
+    alert('For sure ' + username + '! Two dogs. Thank you for playing!');
+    numCorr++;
+  } else if (answerFive === 'no' || answerFive === 'n') {
+    alert('I have two dogs ' + username + ' but thank you for playing.');
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+animals();
 
 // question six
 
