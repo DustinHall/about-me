@@ -48,19 +48,23 @@ function rum(){
 rum();
 
 // question three
-let answerThree = prompt('Do I like mustard? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 3: ' + answerThree);
 
 // check if the answer is correct.
-if (answerThree === 'yes' || answerThree === 'y') {
-  alert('Yuck.');
-} else if (answerThree === 'no' || answerThree === 'n') {
-  alert('Right, keep that stuff away from me.');
-  numCorr++;
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function mustard(){
+  let answerThree = prompt('Do I like mustard? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerThree === 'yes' || answerThree === 'y') {
+    alert('Yuck.');
+  } else if (answerThree === 'no' || answerThree === 'n') {
+    alert('Right, keep that stuff away from me.');
+    numCorr++;
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+mustard();
 
 // question four
 let answerFour = prompt('Do I currently work? Answer \'yes\' or \'no\'').toLowerCase();
