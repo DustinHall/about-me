@@ -67,19 +67,23 @@ function mustard(){
 mustard();
 
 // question four
-let answerFour = prompt('Do I currently work? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 4: ' + answerFour);
 
 // check if the answer is correct.
-if (answerFour === 'yes' || answerFour === 'y') {
-  alert('Decided to give it up to focus on coding');
-} else if (answerFour === 'no' || answerFour === 'n') {
-  alert('Exactly! Who wants to work when you can just learn code.');
-  numCorr++;
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function work(){
+  let answerFour = prompt('Do I currently work? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerFour === 'yes' || answerFour === 'y') {
+    alert('Decided to give it up to focus on coding');
+  } else if (answerFour === 'no' || answerFour === 'n') {
+    alert('Exactly! Who wants to work when you can just learn code.');
+    numCorr++;
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+work();
 
 // question five
 let answerFive = prompt('Do I have animals? Answer \'yes\' or \'no\'').toLowerCase();
