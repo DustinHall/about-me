@@ -29,19 +29,23 @@ sports();
 
 
 // question two
-let answerTwo = prompt('Do I prefer rum? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 2: ' + answerTwo);
 
 // check if the answer is correct.
-if (answerTwo === 'yes' || answerTwo === 'y') {
-  alert('For sure, and make it a double!');
-  numCorr++;
-} else if (answerTwo === 'no' || answerTwo === 'n') {
-  alert('Wrong, do you even know me at all?');
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function rum(){
+  let answerTwo = prompt('Do I prefer rum? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerTwo === 'yes' || answerTwo === 'y') {
+    alert('For sure, and make it a double!');
+    numCorr++;
+  } else if (answerTwo === 'no' || answerTwo === 'n') {
+    alert('Wrong, do you even know me at all?');
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+rum();
 
 // question three
 let answerThree = prompt('Do I like mustard? Answer \'yes\' or \'no\'').toLowerCase();
