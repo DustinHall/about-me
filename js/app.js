@@ -106,25 +106,28 @@ animals();
 
 // question six
 
-let attempts = 4;
+function favnum(){
+  let attempts = 4;
 
-for (let i = 0; i < attempts; i++) {
-  console.log('i is '+ i);
-  let myNumber = prompt ('What is my favorite number?');
-  myNumber = parseInt(myNumber);
-  if (myNumber === 27) {
-    alert('Congratulations, you got it!');
-    numCorr++;
-    break;
-  } else if (myNumber < 27) {
-    alert(`Sorry but you are too low, you have ${attempts - i - 1} attempts remaining.`);
-  } else if (myNumber > 27) {
-    alert(`Sorry but you are too high, you have ${attempts - i - 1} attempts remaining.`);
-  }
-  if (i === 3){
-    alert('Sorry but the answer is 27.');
+  for (let i = 0; i < attempts; i++) {
+    console.log('i is '+ i);
+    let myNumber = prompt ('What is my favorite number?');
+    myNumber = parseInt(myNumber);
+    if (myNumber === 27) {
+      alert('Congratulations, you got it!');
+      numCorr++;
+      break;
+    } else if (myNumber < 27) {
+      alert(`Sorry but you are too low, you have ${attempts - i - 1} attempts remaining.`);
+    } else if (myNumber > 27) {
+      alert(`Sorry but you are too high, you have ${attempts - i - 1} attempts remaining.`);
+    }
+    if (i === 3){
+      alert('Sorry but the answer is 27.');
+    }
   }
 }
+favnum();
 
 // question 7
 
