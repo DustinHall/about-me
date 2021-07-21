@@ -9,101 +9,125 @@ alert('Hello ' + username);
 let numCorr = 0;
 
 // question one
-let answerOne = prompt('Do I like sports? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 1: ' + answerOne);
 
 // check if the answer is correct.
-if (answerOne === 'yes' || answerOne === 'y') {
-  alert('You are correct, I definitely like sports.');
-  numCorr++;
-} else if (answerOne === 'no' || answerOne === 'n') {
-  alert('Incorrect, I definitely like sports.');
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function sports(){
+  let answerOne = prompt('Do I like sports? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerOne === 'yes' || answerOne === 'y') {
+    alert('You are correct, I definitely like sports.');
+    numCorr++;
+  } else if (answerOne === 'no' || answerOne === 'n') {
+    alert('Incorrect, I definitely like sports.');
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+sports();
+
 
 // question two
-let answerTwo = prompt('Do I prefer rum? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 2: ' + answerTwo);
 
 // check if the answer is correct.
-if (answerTwo === 'yes' || answerTwo === 'y') {
-  alert('For sure, and make it a double!');
-  numCorr++;
-} else if (answerTwo === 'no' || answerTwo === 'n') {
-  alert('Wrong, do you even know me at all?');
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function rum(){
+  let answerTwo = prompt('Do I prefer rum? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerTwo === 'yes' || answerTwo === 'y') {
+    alert('For sure, and make it a double!');
+    numCorr++;
+  } else if (answerTwo === 'no' || answerTwo === 'n') {
+    alert('Wrong, do you even know me at all?');
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+rum();
 
 // question three
-let answerThree = prompt('Do I like mustard? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 3: ' + answerThree);
 
 // check if the answer is correct.
-if (answerThree === 'yes' || answerThree === 'y') {
-  alert('Yuck.');
-} else if (answerThree === 'no' || answerThree === 'n') {
-  alert('Right, keep that stuff away from me.');
-  numCorr++;
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function mustard(){
+  let answerThree = prompt('Do I like mustard? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerThree === 'yes' || answerThree === 'y') {
+    alert('Yuck.');
+  } else if (answerThree === 'no' || answerThree === 'n') {
+    alert('Right, keep that stuff away from me.');
+    numCorr++;
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+mustard();
 
 // question four
-let answerFour = prompt('Do I currently work? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 4: ' + answerFour);
 
 // check if the answer is correct.
-if (answerFour === 'yes' || answerFour === 'y') {
-  alert('Decided to give it up to focus on coding');
-} else if (answerFour === 'no' || answerFour === 'n') {
-  alert('Exactly! Who wants to work when you can just learn code.');
-  numCorr++;
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function work(){
+  let answerFour = prompt('Do I currently work? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerFour === 'yes' || answerFour === 'y') {
+    alert('Decided to give it up to focus on coding');
+  } else if (answerFour === 'no' || answerFour === 'n') {
+    alert('Exactly! Who wants to work when you can just learn code.');
+    numCorr++;
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+work();
 
 // question five
-let answerFive = prompt('Do I have animals? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 5: ' + answerFive);
 
 // check if the answer is correct.
-if (answerFive === 'yes' || answerFive === 'y') {
-  alert('For sure ' + username + '! Two dogs. Thank you for playing!');
-  numCorr++;
-} else if (answerFive === 'no' || answerFive === 'n') {
-  alert('I have two dogs ' + username + ' but thank you for playing.');
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function animals(){
+  let answerFive = prompt('Do I have animals? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerFive === 'yes' || answerFive === 'y') {
+    alert('For sure ' + username + '! Two dogs. Thank you for playing!');
+    numCorr++;
+  } else if (answerFive === 'no' || answerFive === 'n') {
+    alert('I have two dogs ' + username + ' but thank you for playing.');
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+animals();
 
 // question six
 
-let attempts = 4;
+function favnum(){
+  let attempts = 4;
 
-for (let i = 0; i < attempts; i++) {
-  console.log('i is '+ i);
-  let myNumber = prompt ('What is my favorite number?');
-  myNumber = parseInt(myNumber);
-  if (myNumber === 27) {
-    alert('Congratulations, you got it!');
-    numCorr++;
-    break;
-  } else if (myNumber < 27) {
-    alert(`Sorry but you are too low, you have ${attempts - i - 1} attempts remaining.`);
-  } else if (myNumber > 27) {
-    alert(`Sorry but you are too high, you have ${attempts - i - 1} attempts remaining.`);
-  }
-  if (i === 3){
-    alert('Sorry but the answer is 27.');
+  for (let i = 0; i < attempts; i++) {
+    console.log('i is '+ i);
+    let myNumber = prompt ('What is my favorite number?');
+    myNumber = parseInt(myNumber);
+    if (myNumber === 27) {
+      alert('Congratulations, you got it!');
+      numCorr++;
+      break;
+    } else if (myNumber < 27) {
+      alert(`Sorry but you are too low, you have ${attempts - i - 1} attempts remaining.`);
+    } else if (myNumber > 27) {
+      alert(`Sorry but you are too high, you have ${attempts - i - 1} attempts remaining.`);
+    }
+    if (i === 3){
+      alert('Sorry but the answer is 27.');
+    }
   }
 }
+favnum();
 
 // question 7
 
