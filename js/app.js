@@ -9,19 +9,24 @@ alert('Hello ' + username);
 let numCorr = 0;
 
 // question one
-let answerOne = prompt('Do I like sports? Answer \'yes\' or \'no\'').toLowerCase();
+
 
 // console.log('user entered to question 1: ' + answerOne);
 
 // check if the answer is correct.
-if (answerOne === 'yes' || answerOne === 'y') {
-  alert('You are correct, I definitely like sports.');
-  numCorr++;
-} else if (answerOne === 'no' || answerOne === 'n') {
-  alert('Incorrect, I definitely like sports.');
-} else {
-  alert('Please answer \'yes\' or \'no\'.');
+function sports(){
+  let answerOne = prompt('Do I like sports? Answer \'yes\' or \'no\'').toLowerCase();
+  if (answerOne === 'yes' || answerOne === 'y') {
+    alert('You are correct, I definitely like sports.');
+    numCorr++;
+  } else if (answerOne === 'no' || answerOne === 'n') {
+    alert('Incorrect, I definitely like sports.');
+  } else {
+    alert('Please answer \'yes\' or \'no\'.');
+  }
 }
+sports();
+
 
 // question two
 let answerTwo = prompt('Do I prefer rum? Answer \'yes\' or \'no\'').toLowerCase();
