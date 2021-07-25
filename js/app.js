@@ -11,8 +11,6 @@ let numCorr = 0;
 // question one
 
 
-// console.log('user entered to question 1: ' + answerOne);
-
 // check if the answer is correct.
 function sports(){
   let answerOne = prompt('Do I like sports? Answer \'yes\' or \'no\'').toLowerCase();
@@ -30,9 +28,6 @@ sports();
 
 // question two
 
-
-// console.log('user entered to question 2: ' + answerTwo);
-
 // check if the answer is correct.
 function rum(){
   let answerTwo = prompt('Do I prefer rum? Answer \'yes\' or \'no\'').toLowerCase();
@@ -48,9 +43,6 @@ function rum(){
 rum();
 
 // question three
-
-
-// console.log('user entered to question 3: ' + answerThree);
 
 // check if the answer is correct.
 function mustard(){
@@ -68,9 +60,6 @@ mustard();
 
 // question four
 
-
-// console.log('user entered to question 4: ' + answerFour);
-
 // check if the answer is correct.
 function work(){
   let answerFour = prompt('Do I currently work? Answer \'yes\' or \'no\'').toLowerCase();
@@ -86,9 +75,6 @@ function work(){
 work();
 
 // question five
-
-
-// console.log('user entered to question 5: ' + answerFive);
 
 // check if the answer is correct.
 function animals(){
@@ -129,7 +115,7 @@ function favnum(){
 }
 favnum();
 
-// question 7
+// question seven
 
 
 // let myFavSports = ['soccer', 'football', 'rugby', 'baseball'];
@@ -137,20 +123,18 @@ favnum();
 // let tries = 6;
 
 // for (let i = 0; i < tries; i++) {
-//   console.log('i is '+ i);
 //   for (let j = 0; j < myFavSports.length; j++) {
 //     let userResponse = prompt('Name one of my favorite sports.');
 //     console.log(userResponse);
-//     if (userResponse === myFavSports[i]) {
-//       alert('Nice! You must really know me!');
-//       numCorr++;
-//       break;
-//     } else if (userResponse !== myFavSports[i]){
+//     if (userResponse === myFavSports[0] || myFavSports[1] || myFavSports[2]) {
+//     alert('Nice! You must really know me!');
+//     numCorr++;
+//     break;
+//     } else if (userResponse !== myFavSports){
 //       alert(`Sorry but that is incorrect, you have ${tries - i - 1} tries remaining. Keep Thinking!!`);
+//     } if (i === 5){
+//       alert(`Sorry but the answer is ${myFavSports}.`);
 //     }
-//   }
-//   if (i === 5){
-//     alert(`Sorry but the answer is ${myFavSports}.`);
 //   }
 // }
 
